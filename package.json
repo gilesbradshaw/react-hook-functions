@@ -1,0 +1,38 @@
+{
+  "name": "react-hook-functions",
+  "version": "0.0.1",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "umd": "build/index.umd.js",
+  "jsnext:main": "build/index.es.js",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "yarn build",
+    "build": "rollup -c",
+    "test": "jest",
+    "jest:clear": "jest --clearCache"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/react": "^16.9.16",
+    "jest": "^24.9.0",
+    "react": "^16.12.0",
+    "rollup": "^1.27.13",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.3"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "files": [
+    "build"
+  ]
+}
